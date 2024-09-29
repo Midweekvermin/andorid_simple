@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         texty.setText("Your name is " + inputname);
 
         Intent i = new Intent(this, SettingsActivity.class);
+        //add data to the intent
+        i.putExtra("cool","hello");
         startActivity(i);
     }
 }
